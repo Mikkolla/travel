@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Travel App</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css" />
+	
+	
+</head>
+
+<body class="scale-up-center">
+	
+	<header class="header ">
+	<div class="header__wrapper container">
+
+		<a href="/" class="header__logo">Travlog</a>
+		<div class="header__nav">
+			<div class="header__backdrop" id="headerBackdrop" onclick="navToggle()"></div>
+			<ul class="header__ul" id="headerUl">
+				<li class="header__li"><a class="header__a active" href="/">Home</a></li>
+				<li class="header__li"><a class="header__a" href="/">About</a></li>
+				<li class="header__li"><a class="header__a" href="/">Destinations</a></li>
+				<li class="header__li"><a class="header__a" href="/">Packages</a></li>
+				<li class="header__li"><a class="header__a" href="/">Blog</a></li>
+				<li class="header__li"><a class="header__a" href="/">Contact Us</a></li>
+	
+				<div class="header__reg-mobile">
+					<a href="/" class="header__log">Log In</a>
+					<a href="/" class="header__sign">Sign Up</a>
+				</div>
+				<span class="material-icons icon-close" onclick="navToggle()">close</span>
+			</ul>
+			
+			<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+		</div>
+
+		<div class="header__reg">
+			<a href="/" class="header__log">Log In</a>
+			<a href="/" class="header__sign">Sign Up</a>
+		</div>
+
+
+	</div>
+		
+	
+
+</header>
+
+	<section class="main scale-up-center">
+
+    <div class="main__layer">
+        <img  src="./img/main/layer.png" alt="layer">
+    </div>
+
+   
+
+
+
+    <div class="main__wrapper container">
+        
+        <article class="main__text">
+            <div class="main__intro">
+                <a href="https://www.youtube.com/watch?v=pQaD8iVX0es" class="main__inside">Explore the world! <img src="./img/main/bag.svg" alt="bag"></a>
+            </div>
+            <div class="main__title">Travel <span class="main__span">top destination </span> 
+                of the world</div>
+            <div class="main__desc">Where adventure meets comfort. We create unforgettable travel experiences</div>
+            <div class="main__btn">
+                <a href="/" class="main__btn-purple">Get Started</a>
+                <a href="/" class="main__btn-img"><img src="./img/main/play.svg" alt="play">Watch Demo</a>
+            </div>
+        </article>
+
+        <aside class="main__img-block">
+            <div class="main__img">
+                
+                <img src="./img/main/main.png" alt="main">
+                
+            </div>
+            
+
+        </aside>
+
+
+    </div>
+
+
+
+
+</section>
+	
+	<section  class="splide splide--slide splide--ltr splide--draggable is-active is-overflow is-initialized" aria-label="Splide Basic HTML Example" id="splide01" aria-roledescription="carousel">
+		<div class="text container">
+			<h2 class="title">choose your next destination</h2>
+			<h1 class="desc">Explore top destination</h1>
+		</div>
+		<div class="splide__arrows splide__arrows--ltr">
+			
+			
+			<button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide" aria-controls="splide01-track">
+				<img class="img" src="./img/swiper/prev.svg" alt="">
+				
+			</button>
+			
+			<button class="splide__arrow splide__arrow--prev" type="button" disabled="" aria-label="Previous slide" aria-controls="splide01-track">
+				 <img class="img" src="./img/swiper/next.svg" alt="">
+				 
+				
+			</button>
+			
+			
+			
+		</div>
+		
+		<div  class="splide__track splide__track--slide splide__track--ltr splide__track--draggable container" id="splide01-track" style="padding-left: 0px;" aria-live="polite" aria-atomic="true">
+			   
+			<ul class="splide__list" id="splide01-list" role="presentation" style="transform: translateX(0px);">
+	
+	
+				<li class="splide__slide is-active is-visible" id="splide01-slide01" role="tabpanel" aria-roledescription="slide" aria-label="1 of 3" style="width: calc(100%);">
+					<div class="item__img">
+						<img src="./img/swiper/peru.png" alt="peru">
+					</div>
+			
+					<div class="splide__about">
+						<h2 class="item__title">Cappadocia</h2>
+						<p class="item__desc">Lorem Ipsum is simply dummy text of the printing and...see more</p>
+					</div>                    
+					
+					<div class="item__price">
+						
+						<div class="item__price-box">
+							<div class="item__location-title">Machu Picchu, Peru</div>
+							<div class="item__flex">
+								<div class="item__location-desc">$480</div>
+								<div class="item__location-item">x 12 interest free</div>
+							</div>
+							
+						</div>
+						
+						<a href="/" class="item__btn">
+							See More
+						</a>
+					</div>
+				
+				</li>
+				<li class="splide__slide is-next" id="splide01-slide02" role="tabpanel" aria-roledescription="slide" aria-label="2 of 3" style="width: calc(100%);" aria-hidden="true">
+					<div class="item__img">
+						<img src="./img/swiper/france.png" alt="france">
+					</div>
+			
+					<div class="splide__about">
+						<h2 class="item__title">Nice and Cannes</h2>
+						<p class="item__desc">Lorem Ipsum is simply dummy text of the printing and...see more</p>
+					</div>                    
+					
+					<div class="item__price">
+					  
+						<div class="item__price-box">
+							<div class="item__location-title">French Riviera, France</div>
+							<div class="item__flex">
+								<div class="item__location-desc">$300</div>
+								<div class="item__location-item">x 12 interest free</div>
+							</div>
+							
+						</div>
+						
+						<a href="/" class="item__btn">
+							See More
+						</a>
+					</div>
+				
+				</li>
+	
+				<li class="splide__slide" id="splide01-slide03" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" style="width: calc(100%);" aria-hidden="true">
+					<div class="item__img">
+						<img src="./img/swiper/spain.png" alt="spain">
+					</div>
+					<div class="splide__about">
+						<h2 class="item__title">Seville</h2>
+						<p class="item__desc">Lorem Ipsum is simply dummy text of the printing and...see more</p>
+					</div>                    
+					
+					<div class="item__price">
+						
+						<div class="item__price-box">
+							<div class="item__location-title">Seville, Spain</div>
+							<div class="item__flex">
+								<div class="item__location-desc">$480</div>
+								<div class="item__location-item">x 12 interest free</div>
+							</div>
+							
+						</div>
+						
+						<a href="/" class="item__btn">
+							See More
+						</a>
+					</div>
+	
+	
+				</li>
+				<li class="splide__slide" id="splide01-slide03" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" style="width: calc(100%);" aria-hidden="true">
+					
+					<div class="item__img">
+						<img src="./img/city/rm.png" alt="img">
+					</div>
+			
+					<div class="splide__about">
+						<h2 class="item__title">Rome</h2>
+						<p class="item__desc">Lorem Ipsum is simply dummy text of the printing and...see more</p>
+					</div>                    
+					
+					<div class="item__price">
+						<div class="item__price-box">
+							<div class="item__location-title">Rome, Italy</div>
+							<div class="item__flex">
+								<div class="item__location-desc">$300</div>
+								<div class="item__location-item">x 12 interest free</div>
+							</div>
+					
+						</div>
+						
+						<a href="/" class="item__btn">
+							See More
+						</a>
+					</div>
+	
+	
+				</li>
+				<li class="splide__slide" id="splide01-slide03" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" style="width: calc(100%);" aria-hidden="true">
+					
+					<div class="item__img">
+						<img src="./img/city/thai.png" alt="img">
+					</div>
+			
+					<div class="splide__about">
+						<h2 class="item__title">Bangkok</h2>
+						<p class="item__desc">Lorem Ipsum is simply dummy text of the printing and...see more</p>
+					</div>                    
+					
+					<div class="item__price">
+						<div class="item__price-box">
+							<div class="item__location-title">Bangkok, Thailand</div>
+							<div class="item__flex">
+								<div class="item__location-desc">$300</div>
+								<div class="item__location-item">x 12 interest free</div>
+							</div>
+					
+						</div>
+						
+						<a href="/" class="item__btn">
+							See More
+						</a>
+					</div>
+
+
+				</li>
+				<li class="splide__slide" id="splide01-slide03" role="tabpanel" aria-roledescription="slide" aria-label="3 of 3" style="width: calc(100%);" aria-hidden="true">
+					<div class="item__img">
+						<img src="./img/city/br.png" alt="img">
+					</div>
+			
+					<div class="splide__about">
+						<h2 class="item__title">Barcelona</h2>
+						<p class="item__desc">Lorem Ipsum is simply dummy text of the printing and...see more</p>
+					</div>                    
+					
+					<div class="item__price">
+						<div class="item__price-box">
+							<div class="item__location-title">Barcelona, Spain</div>
+							<div class="item__flex">
+								<div class="item__location-desc">$300</div>
+								<div class="item__location-item">x 12 interest free</div>
+							</div>
+					
+						</div>
+						
+						<a href="/" class="item__btn">
+							See More
+						</a>
+					</div>
+				</li>
+				  
+				
+		
+				
+				</ul>
+	
+		</div>
+	  <ul class="splide__pagination splide__pagination--ltr" role="tablist" aria-label="Select a slide to show">
+		<li role="presentation">
+			<button class="splide__pagination__page is-active" type="button" role="tab" aria-controls="splide01-slide01" aria-label="Go to slide 1" aria-selected="true"></button>
+		</li>
+	
+		<li role="presentation">
+			<button class="splide__pagination__page" type="button" role="tab" aria-controls="splide01-slide02" aria-label="Go to slide 2" tabindex="-1"></button>
+		</li>
+		
+		<li role="presentation">
+			<button class="splide__pagination__page" type="button" role="tab" aria-controls="splide01-slide03" aria-label="Go to slide 3" tabindex="-1"></button>
+		</li>
+	</ul>
+	</section> 
+
+	
+	
+	
+	<section class="about">
+    <div class="about__wrapper container">
+
+        <div class="about__design">
+            <img class="about__svg-colorful-1" src="./img/about/colorful-1.svg" alt="colorful">
+            <img class="about__svg-colorful-2" src="./img/about/colorful-1.svg" alt="colorful">
+            <img class="about__svg-smallest" src="./img/about/smallest.svg" alt="smallest">
+            <img class="about__svg-orange" src="./img/about/orange.svg" alt="orange">
+            <img class="about__svg-ylw" src="./img/about/ylw.svg" alt="ylw">
+            <div class="about__img-block">
+                <img class="about__img" src="./img/about/women.png" alt="women">
+            </div>
+
+
+        </div>
+
+        .
+        <div class="about__text">
+            <div class="about__roof">
+                <div class="about__intro">WE ARE THE BEST FOR YOU</div>
+                <div class="about__title">Unlock Your Dream Destination</div>
+                <div class="about__desc">We are dedicated to making your journey of discovery truly unforgettable. Our team of passionate travel experts is here to assist you in finding the destination of your dreams.</div>
+            </div>
+            
+            <div class="about__grid">
+                <div class="about__section">
+                    <div class="about__line">
+                        <div class="about__in-box">
+                            <div class="about__thick">4k+</div>
+                            <div class="about__value">Satisfied Customers</div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+               
+                <div class="about__section">
+                    <div class="about__line">
+                        <div class="about__in-box">
+                            <div class="about__thick">1000+</div>
+                            <div class="about__value">Global Destinations</div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="about__section">
+                    <div class="about__line">
+                        <div class="about__in-box">
+                            <div class="about__thick">24/7</div>
+                    <div class="about__value">Customer Support</div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="about__section">
+                    <div class="about__line">
+                        <div class="about__in-box">
+                            <div class="about__thick">100%</div>
+                    <div class="about__value">Dedication</div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+</section>
+	<section class="info container">
+
+    <img class="info__circle1" src="./img/tour/circle1.svg" alt="circle">
+
+    <img  class="info__circle2" src="./img/tour/circle2.svg" alt="circle">
+
+    <img class="info__circle3" src="./img/tour/circle3.svg" alt="circle">
+
+    <article class="info__article">
+        <h2 class="info__title">Meet Our Expert Tour Guides</h2>
+        <p class="info__desc">Our journeys are enriched by our team of seasoned tour guides. Our guides bring your adventures to life with their expertise, passion</p>
+        <img class="info__img" src="./img/tour/bz.png" alt="brazil">
+    </article>
+
+    <article class="info__article">
+
+        <aside class="info__aside">
+            <img src="./img/tour/like.svg" alt="like">
+
+            <div class="info__text">
+                <h4 class="info__aside-title">Expertise</h4>
+            <p class="info__aside-desc">Our guides are experts in their fields, ensuring in-depth knowledge and insights into every destination.</p>
+
+            </div>
+            
+
+        </aside>
+
+        <aside class="info__aside">
+            <img src="./img/tour/heart.svg" alt="like">
+
+            <div class="info__text">
+                <h4 class="info__aside-title">Passion</h4>
+            <p class="info__aside-desc">They are passionate about travel, culture, and history, making your journey engaging and captivating.</p>
+
+            </div>
+
+        </aside>
+
+        <aside class="info__aside">
+            <img src="./img/tour/eject.svg" alt="like">
+            <div class="info__text">
+                <h4 class="info__aside-title">Dedication</h4>
+            <p class="info__aside-desc">Our guides are dedicated to providing exceptional service and ensuring your travel memories are truly unforgettable.</p>
+
+            </div>
+
+        </aside>
+
+
+    </article>
+
+
+
+</section>
+	<section class="city">
+    <div class="city__wrapper container">
+
+        <div class="city__title-block ">
+            <div class="city__info">
+                <div class="city__dest">Top Destination</div>
+                <div class="city__explore">Explore top destination</div>
+            </div>
+
+            <ul class="city__ul">
+                <li class="city__li">
+                    <a class="city__pointer" href="/">City</a>
+                </li>
+                
+                <li class="city__li">
+                    <a class="city__pointer" href="/">Mountain</a>
+                </li>
+
+                <li class="city__li">
+                    <a class="city__pointer" href="/">Forest</a>
+                </li>
+
+                <li class="city__li">
+                    <a class="city__pointer" href="/">Island</a>
+                </li>
+
+                <li class="city__li">
+                    <a class="city__pointer" href="/">see all</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="world__cities">
+
+            <div class="world__beauty">
+                <div class="world__img">
+                    <img src="./img/city/tk.png" alt="Tokyo">
+                </div>
+                <div class="world__title">
+                    Tokyo
+                </div>
+
+                <div class="world__desc">
+                    Lorem Ipsum is simply dummy text of the printing and some
+                </div>
+
+                <div class="world__info-box">
+                    <div class="world__flex">
+                               <div class="world__position"> Tokyo, Japan</div>
+                        <div class="world__money">
+                            <div class="world__cost">$360</div>
+                            <div class="world__interest">x 12 interest free</div>
+                        </div>
+
+
+                    </div>
+
+                    <a href="/" class="world__btn">
+                        See More
+                    </a>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="world__beauty">
+                <div class="world__img">
+                    <img src="./img/city/rm.png" alt="Rome">
+                </div>
+                <div class="world__title">
+                    Rome
+                </div>
+
+                <div class="world__desc">
+                    Lorem Ipsum is simply dummy text of the printing and some
+                </div>
+
+                <div class="world__info-box">
+                    <div class="world__flex">
+                               <div class="world__position"> Rome, Italy</div>
+                        <div class="world__money">
+                            <div class="world__cost">$260</div>
+                            <div class="world__interest">x 10 interest free</div>
+                        </div>
+
+
+                    </div>
+
+                    <a href="/" class="world__btn">
+                        See More
+                    </a>
+                    
+
+                </div>
+
+            </div>
+            <div class="world__beauty">
+                <div class="world__img">
+                    <img src="./img/city/br.png" alt="Barcelona">
+                </div>
+                <div class="world__title">
+                    Barcelona
+                </div>
+
+                <div class="world__desc">
+                    Lorem Ipsum is simply dummy text of the printing and some
+                </div>
+
+                <div class="world__info-box">
+                    <div class="world__flex">
+                               <div class="world__position"> Barcelona, Spain</div>
+                        <div class="world__money">
+                            <div class="world__cost">$360</div>
+                            <div class="world__interest">x 12 interest free</div>
+                        </div>
+
+
+                    </div>
+
+                    <a href="/" class="world__btn">
+                        See More
+                    </a>
+                    
+
+                </div>
+
+            </div>
+
+            <div class="world__beauty">
+                <div class="world__img">
+                    <img src="./img/city/thai.png" alt="thai">
+                </div>
+                <div class="world__title">
+                    Bangkok                
+                </div>
+
+                <div class="world__desc">
+                    Lorem Ipsum is simply dummy text of the printing and some
+                </div>
+
+                <div class="world__info-box">
+                    <div class="world__flex">
+                               <div class="world__position">  Bangkok, Thailand</div>
+                        <div class="world__money">
+                            <div class="world__cost">$360</div>
+                            <div class="world__interest">x 12 interest free</div>
+                        </div>
+
+
+                    </div>
+
+                    <a href="/" class="world__btn">
+                        See More
+                    </a>
+                    
+
+                </div>
+
+            </div>
+            <div class="world__beauty">
+                <div class="world__img">
+                    <img src="./img/city/Sydney.png" alt="Tokyo">
+                </div>
+                <div class="world__title">
+                    Sydney
+                </div>
+
+                <div class="world__desc">
+                    Lorem Ipsum is simply dummy text of the printing and some
+                </div>
+
+                <div class="world__info-box">
+                    <div class="world__flex">
+                               <div class="world__position"> Sydney, Australia</div>
+                        <div class="world__money">
+                            <div class="world__cost">$380</div>
+                            <div class="world__interest">x 12 interest free</div>
+                        </div>
+
+
+                    </div>
+
+                    <a href="/" class="world__btn">
+                        See More
+                    </a>
+                    
+
+                </div>
+
+            </div>
+            <div class="world__beauty">
+                <div class="world__img">
+                    <img src="./img/city/Toronto.png" alt="Tokyo">
+                </div>
+                <div class="world__title">
+                    Toronto
+                </div>
+
+                <div class="world__desc">
+                    Lorem Ipsum is simply dummy text of the printing and some
+                </div>
+
+                <div class="world__info-box">
+                    <div class="world__flex">
+                               <div class="world__position"> Toronto, Canada</div>
+                        <div class="world__money">
+                            <div class="world__cost">$600</div>
+                            <div class="world__interest">x 12 interest free</div>
+                        </div>
+
+
+                    </div>
+
+                    <a href="/" class="world__btn">
+                        See More
+                    </a>
+                    
+
+                </div>
+
+            </div>
+
+
+ 
+        
+
+
+    </div>   
+</section>
+	<section class="experies">
+    <div class="experies__wrapper container">
+
+        <div class="experies__text">
+            <div class="experies__intro">Our Experience</div>
+            <div class="experies__title">Crafting Unforgettable Adventures</div>
+            <div class="experies__desc">We excel in curating remarkable journeys, specializing in outdoor destinations around the globe. With a wealth of experience, we bring adventures to life and invite you to embark on your own. The call of nature awaits—begin your adventure today!</div>
+        
+            <div class="experies__numbers">
+                <div class="experies__item">
+                    <div class="experies__score">1,000+</div>
+                    <div class="experies__item-desc">outdoor destinations</div>
+                </div>
+
+                <div class="experies__item">
+                    <div class="experies__score">98%</div>
+                    <div class="experies__item-desc">customer satisfaction</div>
+                </div>
+
+                <div class="experies__item">
+                    <div class="experies__score">15+</div>
+                    <div class="experies__item-desc">Years Of Experience</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="experies__design">
+            <div class="experies__img">
+                <img class="experies__main" src="./img/exp/main.png" alt="main">
+            </div>
+            <div class="experies__earth">
+                <img src="./img/exp/earth.svg" alt="earth">
+            </div>
+            <div class="experies__adv">
+                <img src="./img/exp/adv.png" alt="adv">
+            </div>
+
+            <div class="experies__cust">
+                <img src="./img/exp/cust.png" alt="cust">
+            </div>
+
+            <div class="experies__fun">
+                <img src="./img/exp/fun.png" alt="fun">
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+</section>
+	<footer class="footer">
+    <div class="footer__wrapper">
+        <main class="title-block">
+            <h1 class="footer__title"> <a href="/">Travlog</a> </h1>
+            <p class="footer__desc">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam</p>
+            <div class="footer__img">
+                <a href="https://www.facebook.com/">     <img src="./img/footer/facebook.svg" alt="meta"></a>
+                <a href="https://twitter.com/"><img src="./img/footer/x.svg" alt="meta"></a>
+                <a href="https://www.instagram.com/"><img src="./img/footer/meta.svg" alt="meta"></a>
+                <a href="https://www.linkedin.com/"><img src="./img/footer/link.svg" alt="meta"></a>
+                <a href="https://www.youtube.com/"><img src="./img/footer/yt.svg" alt="meta"></a>
+                
+            </div>
+        </main>
+
+        <section class="footer__section ">
+            
+                <nav class="footer__nav">
+                    <h1 class="footer__item-title">Product</h1>
+                    <div class="footer__option">
+                        <a href="/" class="footer__a">Features</a>
+                        <a href="/" class="footer__a">Pricing</a>
+    
+                        <a href="/" class="footer__a">Case studies</a>
+                        <a href="/" class="footer__a">Reviews</a>
+                        <a href="/" class="footer__a">Updates</a>
+                    </div>
+                    
+    
+                </nav>
+              
+    
+            
+                <nav class="footer__nav">
+                    <h1 class="footer__item-title">Company</h1>
+                    <div class="footer__option">
+                        <a href="/" class="footer__a">About</a>
+                        <a href="/" class="footer__a"> Contact us</a>
+    
+                        <a href="/" class="footer__a">Careers</a>
+                        <a href="/" class="footer__a">Culture</a>
+                        <a href="/" class="footer__a">Blog</a>
+                    </div>
+                    
+                    </nav>
+             
+    
+            
+                <nav class="footer__nav">
+                    <h1 class="footer__item-title">Support</h1>
+                    <div class="footer__option">
+                        <a href="/" class="footer__a">Getting started</a>
+                        <a href="/" class="footer__a">  Help center</a>
+    
+                        <a href="/" class="footer__a"> Server status</a>
+                        <a href="/" class="footer__a"> Report a bug</a>
+                        <a href="/" class="footer__a">Chat support</a>
+                    </div>
+                    
+    
+                </nav>
+
+                <nav class="footer__nav">
+                    <h1 class="footer__item-title">Contacts us</h1>
+                    <div class="footer__option">
+                        <a href="email" class="footer__a-svg"><img src="./img/footer/email.svg" alt="email">contact@company.com</a>
+                        <a href="tele" class="footer__a-svg"><img src="./img/footer/call.svg" alt="map">(xx) xxxx-xxxx</a>
+    
+                        <a  href="email" class="footer__a-svg"><img src="./img/footer/map.svg" alt="map"> 794 Mcallister St
+                            
+                            San Francisco, 94102</a>
+                        
+                    </div>
+                    
+    
+                </nav>
+            
+        </section>
+
+        
+
+
+
+        
+    </div>
+</footer>
+	
+	
+	<script src="
+	https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+	"></script>
+		<script>
+			function navToggle() {
+				document.getElementById("headerUl").classList.toggle("_active");
+				document.getElementById("headerBackdrop").classList.toggle("_active");
+			}
+		</script>
+		<script>
+			new Splide( '.splide ',{
+				perPage:3,
+				loop:false,
+				type:'loop',
+				paginationKeyboard: 'boolean = true',
+				gap:'36px',
+				autoplay: false,
+				padding:'0px',
+				speed: number = 1500,
+				breakpoints: {
+			1200: {
+						perPage: 1,
+						gap:'0px',
+			},
+	  }
+	
+	
+			} ).mount()
+			
+			
+		  </script>
+	
+	<script>
+		function navToggle() {
+			document.getElementById("headerUl").classList.toggle("_active");
+			document.getElementById("headerBackdrop").classList.toggle("_active");
+		}
+	</script>
+
+<script src="./js/index.bundle.js"></script>
+	
+	
+
+</body>
+
+</html>
